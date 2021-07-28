@@ -13,7 +13,7 @@ store.subscribe(() => {
     localStorage.setItem("notDoneList", store.getState().notDoneList);
     localStorage.setItem("doneList", store.getState().doneList);
     localStorage.setItem("theme", store.getState().theme);
-    document.body.className = localStorage.getItem("theme");
+    document.body.className = localStorage.getItem("theme") ? localStorage.getItem("theme") : "light";
 })
 
 function App() {
