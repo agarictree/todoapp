@@ -71,7 +71,7 @@ module.exports = {
             appMountId: "root"
           }),
           new MiniCssExtractPlugin({
-            filename: "styles.css"
+            filename: "./styles.css"
           })
     ]
 }
