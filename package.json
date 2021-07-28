@@ -1,0 +1,43 @@
+{
+    "name": "todo-list",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "webpack --config webpack.config.js",
+        "dev": "webpack-dev-server",
+        "start": "webpack serve --mode development --open --hot"
+    },
+    "babel": {
+        "presets": [
+            "@babel/preset-env",
+            "@babel/preset-react"
+        ]
+    },
+    "devDependencies": {
+        "@babel/core": "^7.14.8",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/preset-env": "^7.14.8",
+        "@babel/preset-react": "^7.14.5",
+        "babel-loader": "^8.2.2",
+        "copy-webpack-plugin": "^8.1.1",
+        "css-loader": "^5.2.7",
+        "file-loader": "^6.2.0",
+        "html-webpack-plugin": "^5.3.2",
+        "postcss-loader": "^5.3.0",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-redux": "^7.2.4",
+        "react-router": "^5.2.0",
+        "react-router-dom": "^5.2.0",
+        "redux": "^4.1.0",
+        "sass-loader": "^11.1.1",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.46.0",
+        "webpack-cli": "^4.7.2",
+        "webpack-dev-server": "^3.11.2",
+        "webpack-template-plugin": "^0.1.4"
+    },
+    "dependencies": {
+        "babel-polyfill": "^6.26.0",
+        "mini-css-extract-plugin": "^2.1.0"
+    }
+}
