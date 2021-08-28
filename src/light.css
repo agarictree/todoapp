@@ -36,8 +36,14 @@
 }
 
 .light input[type="text"] {
-  max-width: 70%;
+  width: 70%;
   height: 40px;
+}
+
+@media screen and (max-width: 540px) {
+  .light input[type="text"] {
+    width: 50%;
+  }
 }
 
 .light .submitItem {

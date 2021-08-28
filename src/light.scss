@@ -25,8 +25,11 @@
         }
     }
     input[type="text"] {
-        max-width: 70%;
+        width: 70%;
         height: 40px;
+        @media screen and (max-width: 540px) {
+            width: 50%;
+        }
     }
     .submitItem {
         padding: 5px;
