@@ -1,0 +1,136 @@
+.dark {
+    background-color: #1B1B1B;
+    .mainHeader {
+        display: block;
+        font-size: 50px;
+        text-align: center;
+        width: 100vw;
+        color: #919191;
+    }
+    .addItemForm {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        max-width: 100%;
+        label {
+            max-width: 15%;
+            text-align: center;
+            align-self: center;
+            font-weight: bold;
+            font-size: 20px;
+            color: #919191;
+        }
+    }
+    input[type="text"] {
+        max-width: 70%;
+        height: 40px;
+        background-color: #232323;
+        color: #919191;
+        outline: none;
+        border: none;
+    }
+    .submitItem {
+        max-width: 15%;
+        padding: 5px;
+        background-color: #0C0F17;
+        color: #919191;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .todoContainer {
+        max-width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        @media screen and (max-width: 412px) {
+            flex-flow: column nowrap;
+            max-width: 100%;
+        }
+    }
+    .todoList {
+        display: block;
+        width: 50%;
+        text-align: center;
+    }
+    .notDoneListContainer {
+        width: 50%;
+        padding: 5px;
+        @media screen and (max-width: 411px) {
+            width: 100%;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            color: #919191;
+        }
+        p {
+            font-size: 25px;
+            text-align: center;
+            color: #919191;
+        }
+    }
+    .doneList {
+        display: block;
+        max-width: 100%;
+        text-align: center;
+    }
+    .doneListContainer {
+        width: 50%;
+        padding: 5px;
+        @media screen and (max-width: 411px) {
+            width: 100%;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-align: center;
+            color: #919191;
+        }
+        
+        p {
+            font-size: 25px;
+            text-align: center;
+        }
+    }
+    #notDone {
+        color: darkred;
+        font-size: 55px;
+    }
+    #done {
+        color: green;
+        font-size: 50px;
+    }
+    .items {
+        font-size: 28px;
+        max-width: 100%;
+        list-style-position: inside;
+        padding: 0;
+        div {
+            display: flex;
+            flex-flow: row nowrap;
+            width: 100%;
+        }
+        li {
+            background-color: #232323;
+            margin: 8px 0;
+            padding: 6px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    #closeBtn {
+        color: darkred;
+        margin: 10px;
+        font-size: 17px;
+        border-radius: 5px;
+        background-color: #0C0F17;
+        border: none;
+    }
+    .changeThemeBtn {
+        background-color: #0C0F17;
+        color: #919191;
+        border: none;
+        padding: 6px;
+        border-radius: 6px;
+    }
+}

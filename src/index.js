@@ -8,7 +8,8 @@ import { todoReducer } from "./reducer";
 
 export let Context = React.createContext();
 let store = createStore(todoReducer);
-document.body.className = localStorage.getItem("theme");
+document.body.className = localStorage.getItem("theme") ? localStorage.getItem("theme") : "light";
+console.log(localStorage.getItem("theme"));
 store.subscribe(() => {
     localStorage.setItem("notDoneList", store.getState().notDoneList);
     localStorage.setItem("doneList", store.getState().doneList);
