@@ -4,7 +4,10 @@
         display: block;
         font-size: 50px;
         text-align: center;
-        width: 100vw;
+        max-width: 100%;
+                @media screen and (max-width: 540px) {
+                    font-size: 32px;
+                }
     }
     .addItemForm {
         display: flex;
@@ -16,14 +19,16 @@
             align-self: center;
             font-weight: bold;
             font-size: 20px;
+            @media screen and (max-width: 540px) {
+                font-size: 13px;
+            }
         }
     }
     input[type="text"] {
-        width: 70%;
+        max-width: 70%;
         height: 40px;
     }
     .submitItem {
-        width: 100px;
         padding: 5px;
         background-color: dodgerblue;
         color: white;
@@ -55,10 +60,16 @@
     #notDone {
         color: darkred;
         font-size: 55px;
+        @media screen and (max-width: 540px) {
+            font-size: 23px;
+        }
     }
     #done {
         color: green;
         font-size: 50px;
+        @media screen and (max-width: 540px) {
+            font-size: 20px;
+        }
     }
     .notDoneListContainer {
         width: 50%;

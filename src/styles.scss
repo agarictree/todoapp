@@ -9,3 +9,8 @@ body {
     max-width: 100%;
     padding: 7px;
 }
+h1 {
+    @media screen and (max-width: 540px) {
+        font-size: 23px;
+    }
+}

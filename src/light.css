@@ -6,7 +6,13 @@
   display: block;
   font-size: 50px;
   text-align: center;
-  width: 100vw;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .light .mainHeader {
+    font-size: 32px;
+  }
 }
 
 .light .addItemForm {
@@ -23,13 +29,18 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 540px) {
+  .light .addItemForm label {
+    font-size: 13px;
+  }
+}
+
 .light input[type="text"] {
-  width: 70%;
+  max-width: 70%;
   height: 40px;
 }
 
 .light .submitItem {
-  width: 100px;
   padding: 5px;
   background-color: dodgerblue;
   color: white;
@@ -69,9 +80,21 @@
   font-size: 55px;
 }
 
+@media screen and (max-width: 540px) {
+  .light #notDone {
+    font-size: 23px;
+  }
+}
+
 .light #done {
   color: green;
   font-size: 50px;
+}
+
+@media screen and (max-width: 540px) {
+  .light #done {
+    font-size: 20px;
+  }
 }
 
 .light .notDoneListContainer {

@@ -9,8 +9,14 @@
   display: block;
   font-size: 50px;
   text-align: center;
-  width: 100vw;
+  max-width: 100%;
   color: #919191;
+}
+
+@media screen and (max-width: 540px) {
+  .dark .mainHeader {
+    font-size: 32px;
+  }
 }
 
 .dark .addItemForm {
@@ -21,7 +27,6 @@
 }
 
 .dark .addItemForm label {
-  max-width: 15%;
   text-align: center;
   align-self: center;
   font-weight: bold;
@@ -29,8 +34,14 @@
   color: #919191;
 }
 
+@media screen and (max-width: 540px) {
+  .dark .addItemForm label {
+    font-size: 13px;
+  }
+}
+
 .dark input[type="text"] {
-  max-width: 70%;
+  width: 70%;
   height: 40px;
   background-color: #232323;
   color: #919191;
@@ -38,14 +49,26 @@
   border: none;
 }
 
+@media screen and (max-width: 540px) {
+  .dark input[type="text"] {
+    width: 50%;
+  }
+}
+
 .dark .submitItem {
-  max-width: 15%;
   padding: 5px;
   background-color: #0C0F17;
   color: #919191;
   border: none;
   cursor: pointer;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 540px) {
+  .dark .submitItem {
+    width: 15%;
+    padding: 10px;
+  }
 }
 
 .dark .todoContainer {
@@ -91,6 +114,12 @@
   color: #919191;
 }
 
+@media screen and (max-width: 540px) {
+  .dark .notDoneListContainer p {
+    font-size: 20px;
+  }
+}
+
 .dark .doneList {
   display: block;
   max-width: 100%;
@@ -119,14 +148,32 @@
   text-align: center;
 }
 
+@media screen and (max-width: 540px) {
+  .dark .doneListContainer p {
+    font-size: 16px;
+  }
+}
+
 .dark #notDone {
   color: darkred;
   font-size: 55px;
 }
 
+@media screen and (max-width: 540px) {
+  .dark #notDone {
+    font-size: 23px;
+  }
+}
+
 .dark #done {
   color: green;
   font-size: 50px;
+}
+
+@media screen and (max-width: 540px) {
+  .dark #done {
+    font-size: 20px;
+  }
 }
 
 .dark .items {
@@ -178,7 +225,13 @@
   display: block;
   font-size: 50px;
   text-align: center;
-  width: 100vw;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 540px) {
+  .light .mainHeader {
+    font-size: 32px;
+  }
 }
 
 .light .addItemForm {
@@ -195,13 +248,18 @@
   font-size: 20px;
 }
 
+@media screen and (max-width: 540px) {
+  .light .addItemForm label {
+    font-size: 13px;
+  }
+}
+
 .light input[type="text"] {
-  width: 70%;
+  max-width: 70%;
   height: 40px;
 }
 
 .light .submitItem {
-  width: 100px;
   padding: 5px;
   background-color: dodgerblue;
   color: white;
@@ -241,9 +299,21 @@
   font-size: 55px;
 }
 
+@media screen and (max-width: 540px) {
+  .light #notDone {
+    font-size: 23px;
+  }
+}
+
 .light #done {
   color: green;
   font-size: 50px;
+}
+
+@media screen and (max-width: 540px) {
+  .light #done {
+    font-size: 20px;
+  }
 }
 
 .light .notDoneListContainer {
@@ -337,5 +407,11 @@ body {
   display: block;
   max-width: 100%;
   padding: 7px;
+}
+
+@media screen and (max-width: 540px) {
+  h1 {
+    font-size: 23px;
+  }
 }
 
