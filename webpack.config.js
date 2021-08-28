@@ -1,6 +1,8 @@
 let HtmlWebpackPlugin = require('html-webpack-plugin');
 let HtmlTemplatePlugin = require('webpack-template-plugin');
 let MiniCssExtractPlugin = require("mini-css-extract-plugin");
+let CopyWebpackPlugin = require("copy-webpack-plugin");
+
 let path = require("path");
 require('@babel/polyfill');
 
@@ -72,6 +74,11 @@ module.exports = {
           }),
           new MiniCssExtractPlugin({
             filename: "./styles.css"
+          }),           new CopyWebpackPlugin({
+            patterns: [{
+                from: path.resolve(__dirname, "src/img"),
+                to: path.resolve(__dirname, "dist/img")
+            }],
           })
     ]
 }
